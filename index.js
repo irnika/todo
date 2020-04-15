@@ -4,11 +4,11 @@ const todos = [
     { title: "Задача 3", description: "Сделать что-то", completed: false } // 2
  ];
  
- function addTodo(title, description) {
-   todos.push({ title: "Задача 4", description: "Сделать что-то", completed: false })
-     
- }
- addTodo()
- 
- console.log(todos)
+function addTodo(title, description) {
+    todos.push({ title: title, description: description, completed: false }) 
+  }
+  
+addTodo("Задача 4", "Сделать что-то")
+
+console.log(todos)
  
