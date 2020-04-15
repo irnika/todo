@@ -52,5 +52,4 @@ if(todo.title){
 }
 
 updateTodo(2, {title: "Новый заголовoк задачи", description: "Новое описание задачи"})
-
 console.log(todos)
