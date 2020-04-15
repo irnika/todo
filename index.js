@@ -25,7 +25,6 @@ toggleTodo(3)
 
 
 
-//1 вариант
 function deleteTodo(index) {
     todos.splice(index, 1)
   }
