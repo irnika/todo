@@ -10,5 +10,19 @@ function addTodo(title, description) {
   
 addTodo("Задача 4", "Сделать что-то")
 
+
+
+function toggleTodo(index) {
+    if (todos[index].completed){
+        todos[index].completed = false
+        }
+    else{todos[index].completed = true}
+  }
+  
+toggleTodo(3)
+
+
+
+
 console.log(todos)
  
