@@ -34,5 +34,19 @@ deleteTodo(1)
 
 
 
+function updateTodo(index, todo) {
+  if(todo.title){
+    todos[index].title = todo.title
+  }
+     if(todo.description){
+    todos[index].description = todo.description
+  }  
+}
+
+updateTodo(2, {title: "Новый заголовoк задачи", description: "Новое описание задачи"})
+
+
+
+
 console.log(todos)
  
