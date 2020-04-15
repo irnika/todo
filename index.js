@@ -9,8 +9,9 @@ function addTodo(title, description) {
   }
   
 addTodo("Задача 4", "Сделать что-то")
+console.log(todos)
 
-
+//---------------------
 
 
 function toggleTodo(index) {
@@ -21,8 +22,9 @@ function toggleTodo(index) {
   }
   
 toggleTodo(3)
+console.log(todos)
 
-
+//---------------------
 
 
 function deleteTodo(index) {
@@ -30,8 +32,9 @@ function deleteTodo(index) {
   }
 
 deleteTodo(1)
+console.log(todos)
 
-
+//--------------------------
 
 
 function updateTodo(index, todo) {
@@ -44,8 +47,9 @@ function updateTodo(index, todo) {
 }
 
 updateTodo(2, {title: "Новый заголовoк задачи", description: "Новое описание задачи"})
+console.log(todos)
 
-
+//----------------------
 
 
 console.log(todos)
