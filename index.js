@@ -12,6 +12,7 @@ addTodo("Задача 4", "Сделать что-то")
 
 
 
+
 function toggleTodo(index) {
     if (todos[index].completed){
         todos[index].completed = false
@@ -20,6 +21,16 @@ function toggleTodo(index) {
   }
   
 toggleTodo(3)
+
+
+
+
+//1 вариант
+function deleteTodo(index) {
+    todos.splice(index, 1)
+  }
+
+deleteTodo(1)
 
 
 
