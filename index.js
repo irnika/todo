@@ -53,3 +53,69 @@ if(todo.title){
 
 updateTodo(2, {title: "Новый заголовoк задачи", description: "Новое описание задачи"})
 console.log(todos)
+
+
+//----------------------
+console.log("-------5 задание-----------")
+
+function filterTodos(filter) {
+  if (filter === 'active'){
+   
+    var active = todos.filter(function(active) {
+  return !active.completed
+    })
+    console.log("активные задачи", active)     
+  }
+  if(filter === 'completed'){
+    var completed = todos.filter(function(completed) {
+  return completed.completed;
+  })
+    console.log("выполненные задачи", completed)
+    }
+    if(filter === 'all'){
+    console.log("все задачи", todos)
+  } 
+}
+  
+filterTodos('active')
+
+filterTodos('completed')
+
+filterTodos('all')
+
+
+
+//-------------------------
+
+console.log("-------6 задание-----------")
+
+function searchTodos(search) {
+  for (let i = 0; i< todos.length; i++ ){
+   
+     if(todos[i].title.includes(search)){
+        console.log(todos[i].title)
+       todos.splice(i, 1)
+       };
+  }
+    console.log(todos)
+  } 
+  
+  searchTodos(2)
+
+
+  //-----------------------
+
+  console.log("-------7 задание-----------")
+
+  function toggleTodos(completed) {
+    for (let i = 0; i< todos.length; i++ ){
+     
+       if(todos[i].completed !== completed )
+        {
+          todos[i].completed = completed
+        }
+    }
+  }
+  
+  toggleTodos(true)
+  console.log(todos)
