@@ -125,14 +125,14 @@ function searchTodos(search) {
   console.log("-------8 задание-----------")
 
   function clearCompletedTodos() {
-    for (let i = 0; i< todos.length; i++ ){
+    for (let i = 0; i < todos.length; i++ ){
      
        if(todos[i].completed){
-          console.log(todos[i].completed)
          todos.splice(i, 1)
          };
     }
-      console.log(todos)
+      
     } 
     
     clearCompletedTodos()
+    console.log(todos)
