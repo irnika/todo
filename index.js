@@ -119,3 +119,20 @@ function searchTodos(search) {
   
   toggleTodos(true)
   console.log(todos)
+
+
+  //-------------------------
+  console.log("-------8 задание-----------")
+
+  function clearCompletedTodos() {
+    for (let i = 0; i< todos.length; i++ ){
+     
+       if(todos[i].completed){
+          console.log(todos[i].completed)
+         todos.splice(i, 1)
+         };
+    }
+      console.log(todos)
+    } 
+    
+    clearCompletedTodos()
