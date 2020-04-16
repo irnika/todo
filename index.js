@@ -130,8 +130,7 @@ function searchTodos(search) {
        if(todos[i].completed){
          todos.splice(i, 1)
          };
-    }
-      
+    } 
     } 
     
     clearCompletedTodos()
